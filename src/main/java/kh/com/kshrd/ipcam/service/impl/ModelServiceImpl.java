@@ -1,8 +1,10 @@
 package kh.com.kshrd.ipcam.service.impl;
 
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import kh.com.kshrd.ipcam.entity.camera.Model;
+import kh.com.kshrd.ipcam.repository.camera.ModelRepository;
 import kh.com.kshrd.ipcam.service.extend.ModelService;
 
 /**
@@ -11,35 +13,33 @@ import kh.com.kshrd.ipcam.service.extend.ModelService;
  *
  */
 public class ModelServiceImpl implements ModelService{
+	
+	@Autowired
+	private ModelRepository repository;
 
 	@Override
 	public Model findOne(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findOne(id);
 	}
 
 	@Override
 	public List<Model> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findAll();
 	}
 
 	@Override
 	public boolean remove(int id) {
-		// TODO Auto-generated method stub
-		return false;
+		return repository.remove(id);
 	}
 
 	@Override
 	public boolean update(Model object) {
-		// TODO Auto-generated method stub
-		return false;
+		return repository.update(object);
 	}
 
 	@Override
 	public boolean save(Model object) {
-		// TODO Auto-generated method stub
-		return false;
+		return repository.save(object);
 	}
 
 }
