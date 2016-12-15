@@ -1,4 +1,4 @@
-package ipcam.knongdai.configuration;
+package kh.com.kshrd.ipcam.configuration.swagger;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
