@@ -1,12 +1,16 @@
 package kh.com.kshrd.ipcam.entity.camera;
 
+import java.sql.Date;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import kh.com.kshrd.ipcam.entity.base.BaseEntity;
 
 public class Model extends BaseEntity{
-	
+	@JsonProperty("VENDER")
 	private Vender vender;
+	@JsonProperty("IMAGE")
 	private String image;
-
 	public Vender getVender() {
 		return vender;
 	}
@@ -19,6 +23,7 @@ public class Model extends BaseEntity{
 	public void setImage(String image) {
 		this.image = image;
 	}
+	
 	@Override
 	public String toString() {
 		return "Model [vender=" + vender + ", image=" + image + "]";

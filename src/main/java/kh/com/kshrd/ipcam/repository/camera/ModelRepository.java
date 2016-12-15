@@ -14,14 +14,22 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ModelRepository {
 	
-	final String GET_ALL_MODEL="SELECT * FROM tbl_model";	
+	final String GET_ALL_MODEL="SELECT *,A.name AS name, B.name AS vender_name FROM tbl_model A LEFT JOIN tbl_vender B ON A.vender_id = B.vender_id";	
 	final String GET_MODEL_BY_ID="SELECT * FROM tbl_model WHERE model_id = #{id}";
 	final String DELETE_MODEL_BY_ID="DELETE FROM tbl_model WHERE model_id = #{id}";
 	final String UPDATE_MODEL_BY_ID="UPDATE tbl_model SET name=#{name},vender_id=#{vender.id},image=#{image} WHERE model_id=#{id};";
 	final String INSERT_MODEL="INSERT INTO tbl_model VALUES(nextval('tbl_model_model_id_seq'),#{name},#{vender.id},now(),#{image})";
 				
-
+    
 	@Select(ModelRepository.GET_ALL_MODEL)
+	@Results({
+		@Result(property="id", column="model_id"),
+		@Result(property="name", column="name"),
+		@Result(property="vender.id", column="vender_id"),
+		@Result(property="vender.name", column="vender_name"),
+		@Result(property="createDate", column="create_date"),
+		@Result(property="image", column="image")
+	})
 	ArrayList<Model> findAll();
 	@Results({
 		@Result(property="id", column="model_id"),

@@ -1,10 +1,22 @@
 package kh.com.kshrd.ipcam.entity.base;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
+import org.joda.time.DateTime;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.wordnik.swagger.annotations.ApiModelProperty;
+
 public class BaseEntity {
+	@JsonProperty("ID")
 	protected int id;
+	@JsonProperty("NAME")
 	protected String name;
+	@ApiModelProperty(required = true, dataType="date")  
+	@JsonFormat(pattern = "dd/mm/yyyy") 
+	@JsonProperty("CREATE_DATE")
 	protected Timestamp createDate;
 	
 	public BaseEntity() {}
@@ -30,7 +42,7 @@ public class BaseEntity {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 	public Timestamp getCreateDate() {
 		return createDate;
 	}
