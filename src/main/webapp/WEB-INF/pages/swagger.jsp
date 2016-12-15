@@ -5,25 +5,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Swagger UI</title>
-  <link rel="icon" type="image/png" href="${pageContext.request.contextPath}/resources/dist/images/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="${pageContext.request.contextPath}/resources/dist/images/favicon-16x16.png" sizes="16x16" />
-  <link href='${pageContext.request.contextPath}/resources/dist/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='${pageContext.request.contextPath}/resources/dist/css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='${pageContext.request.contextPath}/resources/dist/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='${pageContext.request.contextPath}/resources/dist/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
-  <link href='${pageContext.request.contextPath}/resources/dist/css/print.css' media='print' rel='stylesheet' type='text/css'/>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/jquery-1.8.0.min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/jquery.slideto.min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/jquery.wiggle.min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/handlebars-2.0.0.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/underscore-min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/backbone-min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/swagger-ui.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/highlight.7.3.pack.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/jsoneditor.min.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/marked.js' type='text/javascript'></script>
-  <script src='${pageContext.request.contextPath}/resources/dist/lib/swagger-oauth.js' type='text/javascript'></script>
+  <link rel="icon" type="image/png" href="${pageContext.request.contextPath}/resources/lib/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="${pageContext.request.contextPath}/resources/lib/images/favicon-16x16.png" sizes="16x16" />
+  <link href='${pageContext.request.contextPath}/resources/lib/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='${pageContext.request.contextPath}/resources/lib/css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='${pageContext.request.contextPath}/resources/lib/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='${pageContext.request.contextPath}/resources/lib/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='${pageContext.request.contextPath}/resources/lib/css/print.css' media='print' rel='stylesheet' type='text/css'/>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/handlebars-2.0.0.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/underscore-min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/backbone-min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/swagger-ui.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/highlight.7.3.pack.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/jsoneditor.min.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/marked.js' type='text/javascript'></script>
+  <script src='${pageContext.request.contextPath}/resources/lib/lib/swagger-oauth.js' type='text/javascript'></script>
 
   <!-- Some basic translations -->
   <!-- <script src='lang/translator.js' type='text/javascript'></script> -->
