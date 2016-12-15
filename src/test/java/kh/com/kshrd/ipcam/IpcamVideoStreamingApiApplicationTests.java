@@ -9,8 +9,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class IpcamVideoStreamingApiApplicationTests {
 
+
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
