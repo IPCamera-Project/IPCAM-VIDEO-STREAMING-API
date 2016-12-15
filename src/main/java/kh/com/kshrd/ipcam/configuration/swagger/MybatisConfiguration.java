@@ -1,4 +1,4 @@
-package ipcam.knongdai.configuration;
+package kh.com.kshrd.ipcam.configuration.swagger;
 
 import com.mangofactory.swagger.plugin.EnableSwagger;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -12,7 +12,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan("ipcam.knongdai.repository")
+@MapperScan("kh.com.kshrd.ipcam.repository")
 @EnableSwagger
 public class MybatisConfiguration {
     @Autowired
