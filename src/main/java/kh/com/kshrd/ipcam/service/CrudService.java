@@ -2,6 +2,8 @@ package kh.com.kshrd.ipcam.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 public interface CrudService<T> {
 
 	T findOne(int id);

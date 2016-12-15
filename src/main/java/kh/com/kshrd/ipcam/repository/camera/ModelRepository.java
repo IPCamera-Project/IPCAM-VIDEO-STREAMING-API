@@ -9,7 +9,9 @@ import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ModelRepository {
 	
 	final String GET_ALL_MODEL="SELECT * FROM tbl_model";	

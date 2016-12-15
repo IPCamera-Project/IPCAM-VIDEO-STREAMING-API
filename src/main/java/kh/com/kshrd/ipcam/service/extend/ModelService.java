@@ -1,5 +1,7 @@
 package kh.com.kshrd.ipcam.service.extend;
 
+import org.springframework.stereotype.Service;
+
 import kh.com.kshrd.ipcam.entity.camera.Model;
 import kh.com.kshrd.ipcam.service.CrudService;
 

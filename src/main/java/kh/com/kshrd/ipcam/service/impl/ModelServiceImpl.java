@@ -1,7 +1,9 @@
 package kh.com.kshrd.ipcam.service.impl;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import kh.com.kshrd.ipcam.entity.camera.Model;
 import kh.com.kshrd.ipcam.repository.camera.ModelRepository;
@@ -12,6 +14,7 @@ import kh.com.kshrd.ipcam.service.extend.ModelService;
  * @author PHEARUN-PC
  *
  */
+@Service
 public class ModelServiceImpl implements ModelService{
 	
 	@Autowired

@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IPCamController {
 	
-	@Autowired
-	private IPCamService service;
+/*	@Autowired
+	private IPCamService service;*/
 	
 	/*@RequestMapping(value="/ipcam",method=RequestMethod.GET)
 	public ResponseList<Document> findAll(Paging pagination)
