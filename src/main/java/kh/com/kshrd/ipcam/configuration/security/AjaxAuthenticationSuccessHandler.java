@@ -47,12 +47,5 @@ public class AjaxAuthenticationSuccessHandler implements AuthenticationSuccessHa
 		}
 
 	}
-	
-	/*// Get API User from HttpSession
-	private APIUser getAPIUser(){
-		Authentication authentication =  SecurityContextHolder.getContext().getAuthentication();
-		APIUser user = (APIUser) authentication.getPrincipal();
-		return user;
-	}*/
 
 }
