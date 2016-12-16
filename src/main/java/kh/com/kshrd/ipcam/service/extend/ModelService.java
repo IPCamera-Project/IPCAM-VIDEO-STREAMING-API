@@ -10,5 +10,8 @@ import kh.com.kshrd.ipcam.service.CrudService;
  */
 public interface ModelService extends CrudService<Model>{
 	
+	public boolean insertModel(String name,int vender_id,String image);
+	
+	public boolean updateModelByID(int id,String name,int vender_id,String image);
 
 }

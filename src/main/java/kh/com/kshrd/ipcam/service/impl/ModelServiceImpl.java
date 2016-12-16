@@ -32,17 +32,40 @@ public class ModelServiceImpl implements ModelService{
 
 	@Override
 	public boolean remove(int id) {
-		return repository.remove(id);
+		try {
+			return repository.remove(id);
+		} catch (Exception e) {
+		}
+		return false;
 	}
 
 	@Override
 	public boolean update(Model object) {
-		return repository.update(object);
+		return false;
 	}
 
 	@Override
 	public boolean save(Model object) {
-		return repository.save(object);
+		//return repository.save(object);
+		return false;
+	}
+
+	@Override
+	public boolean insertModel(String name, int vender_id, String image) {
+		try {
+			return repository.save(name,vender_id,image);
+		} catch (Exception e) {
+		}
+		return false;
+	}
+
+	@Override
+	public boolean updateModelByID(int id, String name, int vender_id,String image){
+		try {
+			return repository.updateModelByID(id,name,vender_id,image);
+		} catch (Exception e) {			
+		}
+		return false;
 	}
 
 }
