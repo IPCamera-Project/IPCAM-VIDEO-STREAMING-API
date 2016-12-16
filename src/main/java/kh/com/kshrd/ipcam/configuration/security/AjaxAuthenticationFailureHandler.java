@@ -1,4 +1,4 @@
-package kh.com.kshrd.ipcam.configuration.security;
+/*package kh.com.kshrd.ipcam.configuration.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
@@ -25,3 +25,4 @@ public class AjaxAuthenticationFailureHandler implements AuthenticationFailureHa
 	
 	
 }
+*/
