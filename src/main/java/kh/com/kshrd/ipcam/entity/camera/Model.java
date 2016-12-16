@@ -1,7 +1,5 @@
 package kh.com.kshrd.ipcam.entity.camera;
 
-import java.sql.Date;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import kh.com.kshrd.ipcam.entity.base.BaseEntity;
@@ -9,8 +7,10 @@ import kh.com.kshrd.ipcam.entity.base.BaseEntity;
 public class Model extends BaseEntity{
 	@JsonProperty("VENDER")
 	private Vender vender;
+	
 	@JsonProperty("IMAGE")
 	private String image;
+	
 	public Vender getVender() {
 		return vender;
 	}
