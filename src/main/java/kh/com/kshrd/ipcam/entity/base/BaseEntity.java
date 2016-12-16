@@ -13,7 +13,7 @@ public class BaseEntity {
 	@JsonProperty("NAME")
 	protected String name;
 	
-	/*@ApiModelProperty(required = true, dataType="Timestamp") */ 
+	/*@ApiModelProperty(required = true, dataType="Timestamp")*/
 	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
 	@JsonProperty("CREATE_DATE")
 	protected Timestamp createDate;
