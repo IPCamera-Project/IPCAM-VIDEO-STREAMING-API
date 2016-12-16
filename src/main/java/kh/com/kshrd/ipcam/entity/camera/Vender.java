@@ -1,8 +1,11 @@
 package kh.com.kshrd.ipcam.entity.camera;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import kh.com.kshrd.ipcam.entity.base.BaseEntity;
 
 public class Vender extends BaseEntity{
+	@JsonProperty("LOGO")
 	private String logo;
 
 	public String getLogo() {

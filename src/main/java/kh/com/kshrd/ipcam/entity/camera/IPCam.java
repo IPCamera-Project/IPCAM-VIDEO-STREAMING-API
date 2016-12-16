@@ -1,19 +1,39 @@
 package kh.com.kshrd.ipcam.entity.camera;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import kh.com.kshrd.ipcam.entity.base.BaseEntity;
 import kh.com.kshrd.ipcam.entity.user.User;
 
 public class IPCam extends BaseEntity {
 	
-	private User user;
-	private Model model;
-	private int webPort;
-	private int rtspPort;
-	private String username;
-	private String password;
-	private String ipAddress;
-	private String streamUrl;
+	@JsonProperty("SERIAL_NUMBER")
 	private String serialNumber;
+	
+	@JsonProperty("IP_ADDRESS")
+	private String ipAddress;
+	
+	@JsonProperty("WEB_PORT")
+	private int webPort;
+	
+	@JsonProperty("RTSP_PORT")
+	private int rtspPort;
+	
+	@JsonProperty("USERNAME")
+	private String username;
+	
+	@JsonProperty("PASSWORD")
+	private String password;
+	
+	@JsonProperty("STREAM_URL")
+	private String streamUrl;
+	
+	
+	@JsonProperty("MODEL")
+	private Model model;
+	
+	@JsonProperty("USER")
+	private User user;
+	
 
 	public String getSerialNumber() {
 		return serialNumber;

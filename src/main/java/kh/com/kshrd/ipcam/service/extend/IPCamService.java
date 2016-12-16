@@ -8,4 +8,7 @@ import kh.com.kshrd.ipcam.service.CrudService;
  */
 public interface IPCamService extends CrudService<IPCam>{
 
+	public boolean insertCamera(String name,String serial,String ip,String webPort,String rtspPort,String username,String password,String streamURL,int modelID,int userID);
+	
+	public boolean updateCameraByID(int id,String name,String serial,String ip,String webPort,String rtspPort,String username,String password,String streamURL,int modelID,int userID);
 }
