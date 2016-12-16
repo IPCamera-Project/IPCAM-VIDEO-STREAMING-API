@@ -1,4 +1,4 @@
-package kh.com.kshrd.ipcam.configuration.security;
+/*package kh.com.kshrd.ipcam.configuration.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -41,3 +41,4 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     }
 }
+*/
