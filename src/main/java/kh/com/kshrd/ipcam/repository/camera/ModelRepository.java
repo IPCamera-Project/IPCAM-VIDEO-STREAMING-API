@@ -1,10 +1,6 @@
 package kh.com.kshrd.ipcam.repository.camera;
 import java.util.ArrayList;
-
-import javax.websocket.server.PathParam;
-
 import kh.com.kshrd.ipcam.entity.camera.Model;
-
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
@@ -13,9 +9,6 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.PathVariable;
-
-import com.querydsl.core.types.Path;
 
 @Repository
 public interface ModelRepository {
