@@ -36,7 +36,7 @@ public class HikVisionCommandTest implements ICommand {
         this.user = user;
         this.pass = pass;
 
-        logger.info("Create HikvisionPtz: {}@{}:{}", user, host, port);
+        logger.info("Create Hikvision: {}@{}:{}", user, host, port);
 
         if (user != null && user.length() > 0) {
             CredentialsProvider credsProvider = new BasicCredentialsProvider();
