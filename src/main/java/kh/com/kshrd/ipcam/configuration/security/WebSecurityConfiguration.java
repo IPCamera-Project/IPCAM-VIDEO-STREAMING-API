@@ -1,4 +1,4 @@
-package kh.com.kshrd.ipcam.configuration.security;
+/*package kh.com.kshrd.ipcam.configuration.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,7 +20,10 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
         protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-            auth.inMemoryAuthentication().withUser("dev").password("dev").roles("ADMIN");
+            auth.inMemoryAuthentication()
+            	.withUser("admin")
+            	.password("admin")
+            	.roles("ADMIN");
     }
     @Override
         protected  void configure(HttpSecurity httpSecurity)throws  Exception{
@@ -38,3 +41,4 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     }
 }
+*/

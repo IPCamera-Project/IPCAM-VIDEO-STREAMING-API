@@ -8,11 +8,14 @@ import kh.com.kshrd.ipcam.respone.ResponseList;
 import kh.com.kshrd.ipcam.respone.ResponseMessage;
 import kh.com.kshrd.ipcam.respone.ResponseObject;
 import kh.com.kshrd.ipcam.service.extend.ModelService;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 /**
  * 
@@ -79,10 +82,10 @@ public class ModelController {
 	}
 	
 	@RequestMapping(value="/model",method=RequestMethod.POST)
-	public Response insertModel(@RequestBody Model data)
+	public Response insertModel(@RequestParam("name") String name,@RequestParam("vender_id") int vender_id,@RequestParam("image") String image )
 	{
 		Response res=new Response();
-		if(service.save(data)){
+		if(service.insertModel(name,vender_id,image)){
 			res.setCode(ResponseCode.INSERT_SUCCESS);
 			res.setMessage(ResponseMessage.MODEL_MESSAGE);
 		}
@@ -96,11 +99,11 @@ public class ModelController {
 	}
 	
 	@RequestMapping(value="/model",method=RequestMethod.PUT)
-	public Response updateModelByID(@RequestBody Model data)
+	public Response updateModelByID(@RequestParam("id") int id,@RequestParam("name") String name,@RequestParam("vender_id") int vender_id,@RequestParam("image") String image)
 	{
 		Response res=new Response();
 		
-		if(service.update(data))
+		if(service.updateModelByID(id,name,vender_id,image))
 		{
 			res.setCode(ResponseCode.UPDATE_SUCCESS);
 			res.setMessage(ResponseMessage.MODEL_MESSAGE);

@@ -26,6 +26,11 @@ public class MybatisConfiguration {
         dataSource.setUrl("jdbc:postgresql://120.136.24.174:5432/IPCAM_MANAGEMENT_DB");
         dataSource.setUsername("IPCAM_USER");
         dataSource.setPassword("IPCAM_USER");
+        
+        /*dataSource.setUrl("jdbc:postgresql://localhost/cctv");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("123456");*/
+        
         return dataSource;
     }
 
