@@ -1,3 +1,4 @@
+
 package kh.com.kshrd.ipcam.entity.camera;
 
 import java.util.Map;
