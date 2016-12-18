@@ -55,7 +55,7 @@ public class Vivotek implements ICamCommand {
 
     @Override
     public boolean left(String left) {
-        if(left.equalsIgnoreCase(left))
+        if(left.equalsIgnoreCase("left"))
             return executeCommand("left","left");
         return false;
     }

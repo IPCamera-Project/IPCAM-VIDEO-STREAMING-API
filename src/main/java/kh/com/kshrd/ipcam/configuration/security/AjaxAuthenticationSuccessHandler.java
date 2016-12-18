@@ -1,4 +1,4 @@
-/*package kh.com.kshrd.ipcam.configuration.security;
+package kh.com.kshrd.ipcam.configuration.security;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -25,9 +25,7 @@ public class AjaxAuthenticationSuccessHandler implements AuthenticationSuccessHa
 	}
 	
 	
-	 * This method extracts the roles of currently logged-in user and returns
-	 * appropriate URL according to his/her role.
-	 
+
 	private String determineTargetUrl(Authentication authentication) {
 
 		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
@@ -49,4 +47,3 @@ public class AjaxAuthenticationSuccessHandler implements AuthenticationSuccessHa
 	}
 
 }
-*/
