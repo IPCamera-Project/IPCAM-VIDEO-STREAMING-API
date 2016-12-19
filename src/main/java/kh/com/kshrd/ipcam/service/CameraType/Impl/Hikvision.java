@@ -79,9 +79,18 @@ public class Hikvision implements CmdInterface {
                 response2.close();
             }
         } catch (Exception ex) {
-
+            ex.printStackTrace();
         }
         return rslt;
+    }
+
+    private HttpPut makeRequest() {
+        return new HttpPut(
+                String.format("http://%s%s/ISAPI/PTZCtrl/channels/1/continuous", host, port == 80? "": String.format(":%d", port)));
+    }
+
+    private String makeString(int p, int t, int z) {
+        return String.format("<PTZData version=\"2.0\" xmlns=\"http://www.isapi.org/ver20/XMLSchema\"><pan>%d</pan><tilt>%d</tilt><zoom>%d</zoom></PTZData>", p, t, z);
     }
 
     @Override
@@ -164,16 +173,6 @@ public class Hikvision implements CmdInterface {
         return executeCommand("down",makeString(0,0,0));
     }
 
-
-
-    private HttpPut makeRequest() {
-        return new HttpPut(
-                String.format("http://%s%s/ISAPI/PTZCtrl/channels/1/continuous", host, String.format(":%d", port)));// port == 80? "":
-    }
-
-    private String makeString(int p, int t, int z) {
-        return String.format("<PTZData version=\"2.0\" xmlns=\"http://www.isapi.org/ver20/XMLSchema\"><pan>%d</pan><tilt>%d</tilt><zoom>%d</zoom></PTZData>", p, t, z);
-    }
 
 
 
