@@ -16,27 +16,44 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 @RequestMapping("api/camControl")
 public class IPCamControlController {
-    @Autowired CommandServiceImpl commandService;
 
-    @RequestMapping(value = "/cammerCammand",
+    @RequestMapping(value = "/cmd/{method}",
                     method = RequestMethod.POST,
                     produces = "application/json")
     @ResponseBody
-    public Boolean setCommandLeft(){//@RequestBody IPCam ipCam,@RequestParam("cmd")String cmd
+    public Boolean setCommand(@PathVariable("method")String method,
+                                  @RequestParam(defaultValue = "68",required = false)String sp
+                                  ){
+      /*  Integer speed = Integer.parseInt(sp);*/
+
         ICamFactory iCamFactory = new ICamFactory();
-        PtzInterface ptzInterface = iCamFactory.getICam("Hikvision");
-/*
-        ptzInterface.setUser(ipCam.getUsername());
-        ptzInterface.setPass(ipCam.getPassword());
-        ptzInterface.setPort(ipCam.getWebPort());8/8/
-        ptzInterface.left(cmd);*/
+        PtzInterface command = iCamFactory.getICam("Hikvision");
 
-     /*   ptzInterface.setUser("admin");
-        ptzInterface.setPass("12345");
-        ptzInterface.setPort(80);
-        ptzInterface.setHost("192.168.0.38");*/
 
-        ptzInterface.left("80");
+            if(method.equalsIgnoreCase("left") && command.left(sp))
+            {
+                System.out.print("success");
+            }
+            else if(method.equalsIgnoreCase("right") && command.right(sp))
+            {
+                System.out.print("success");
+            }
+            else if(method.equalsIgnoreCase("up") && command.up(sp))
+            {
+                System.out.print("success");
+            }
+            else if(method.equalsIgnoreCase("down") && command.down(sp))
+            {
+                System.out.print("success");
+            }
+            else  if (method.equalsIgnoreCase("zoomIn") && command.zoomIn(sp))
+            {
+                System.out.print("success");
+            }
+            else if (method.equalsIgnoreCase("zoomOut") && command.zoomOut(sp))
+            {
+                System.out.print("success");
+            }
 
         return true;
 
