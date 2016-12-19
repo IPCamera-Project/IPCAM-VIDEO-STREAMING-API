@@ -1,9 +1,7 @@
 package kh.com.kshrd.ipcam.controller.camera;
 
-import kh.com.kshrd.ipcam.entity.camera.CameraType.CameraFactory.ICamFactory;
-import kh.com.kshrd.ipcam.entity.camera.CameraType.PtzInterface;
-import kh.com.kshrd.ipcam.service.impl.CommandServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
+import kh.com.kshrd.ipcam.service.CameraType.CameraFactory.ICamFactory;
+import kh.com.kshrd.ipcam.service.CameraType.CmdInterface;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +25,7 @@ public class IPCamControlController {
       /*  Integer speed = Integer.parseInt(sp);*/
 
         ICamFactory iCamFactory = new ICamFactory();
-        PtzInterface command = iCamFactory.getICam("Hikvision");
+        CmdInterface command = iCamFactory.getICam("Hikvision");
 
 
             if(method.equalsIgnoreCase("left") && command.left(sp))

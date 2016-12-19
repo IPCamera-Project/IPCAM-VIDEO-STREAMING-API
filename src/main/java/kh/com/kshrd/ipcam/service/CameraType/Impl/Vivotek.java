@@ -1,6 +1,6 @@
-package kh.com.kshrd.ipcam.entity.camera.CameraType.Impl;
+package kh.com.kshrd.ipcam.service.CameraType.Impl;
 
-import kh.com.kshrd.ipcam.entity.camera.CameraType.PtzInterface;
+import kh.com.kshrd.ipcam.service.CameraType.CmdInterface;
 import org.apache.http.HttpEntity;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
 /**
  * Created by rina on 12/18/16.
  */
-public class Vivotek implements PtzInterface {
+public class Vivotek implements CmdInterface {
 
 
     private String host;

@@ -1,9 +1,9 @@
-package kh.com.kshrd.ipcam.entity.camera.CameraType;
+package kh.com.kshrd.ipcam.service.CameraType;
 
 /**
  * Created by rina on 12/18/16.
  */
-public interface PtzInterface {
+public interface CmdInterface {
     boolean left(String left);
     boolean right(String right);
     boolean up(String up);
