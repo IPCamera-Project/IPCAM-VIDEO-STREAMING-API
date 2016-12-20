@@ -116,7 +116,7 @@ public class Hikvision implements CmdInterface {
             return false;
         }
 
-        return executeCommand("right",makeString(--value,0,0));
+        return executeCommand("right",makeString(-value,0,0));
     }
 
     @Override
@@ -141,7 +141,7 @@ public class Hikvision implements CmdInterface {
         catch (NumberFormatException e){
             return  false;
         }
-        return executeCommand("down",makeString(0,--value,0));
+        return executeCommand("down",makeString(0,-value,0));
     }
 
     @Override
@@ -153,7 +153,7 @@ public class Hikvision implements CmdInterface {
         catch (NumberFormatException e){
             return  false;
         }
-        return executeCommand("down",makeString(0,0,value));
+        return executeCommand("zoomIn",makeString(0,0,value));
     }
 
     @Override
@@ -165,12 +165,12 @@ public class Hikvision implements CmdInterface {
         catch (NumberFormatException e){
             return  false;
         }
-        return executeCommand("down",makeString(0,0,--value));
+        return executeCommand("zoomOut",makeString(0,0,-value));
     }
 
     @Override
     public  boolean stop(){
-        return executeCommand("down",makeString(0,0,0));
+        return executeCommand("stop",makeString(0,0,0));
     }
 
 
