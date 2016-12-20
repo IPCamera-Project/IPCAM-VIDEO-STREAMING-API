@@ -4,8 +4,7 @@ package kh.com.kshrd.ipcam.entity.camera;
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import kh.com.kshrd.ipcam.entity.base.BaseEntity;
+import kh.com.kshrd.ipcam.entity.camera.base.BaseEntity;
 
 public class Command extends BaseEntity{
 
