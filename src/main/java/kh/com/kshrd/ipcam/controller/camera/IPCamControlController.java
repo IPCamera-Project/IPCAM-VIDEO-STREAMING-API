@@ -27,7 +27,7 @@ public class IPCamControlController {
         ICamFactory iCamFactory = new ICamFactory();
 
         CmdInterface command = iCamFactory.getICam("Hikvision");
-                    command.setConnection("192.168.0.39",80,"admin","12345");
+                    command.setConnection("192.168.0.32",80,"admin","12345");
                 command.stop();
             if(method.equalsIgnoreCase("left") && command.left(sp))
             {
