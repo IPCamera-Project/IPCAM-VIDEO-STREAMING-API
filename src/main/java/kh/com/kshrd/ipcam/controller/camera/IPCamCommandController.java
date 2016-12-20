@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("api/camControl")
-public class IPCamControlController {
+public class IPCamCommandController {
 
     @RequestMapping(value = "/cmd/{method}",
                     method = RequestMethod.POST,
