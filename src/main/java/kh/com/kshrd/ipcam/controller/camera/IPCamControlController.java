@@ -25,8 +25,9 @@ public class IPCamControlController {
       /*  Integer speed = Integer.parseInt(sp);*/
 
         ICamFactory iCamFactory = new ICamFactory();
-        CmdInterface command = iCamFactory.getICam("Hikvision");
-                    command.setConnection("192.168.1.0",80,"admin","12345");
+
+        CmdInterface command = iCamFactory.getICam("Vivotek");
+                    command.setConnection("192.168.0.26",80,"root","pass");
 
             if(method.equalsIgnoreCase("left") && command.left(sp))
             {
