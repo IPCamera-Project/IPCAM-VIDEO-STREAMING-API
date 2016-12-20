@@ -54,7 +54,7 @@ public class Hikvision implements CmdInterface {
     }
 
     @Override
-    public boolean executeCommand(String msg,String command) {
+    public boolean executeCommand(String command,String msg) {
         boolean rslt = false;
         HttpPut req = makeRequest();
         System.out.print("Inside +++++++ "+req);
@@ -103,7 +103,7 @@ public class Hikvision implements CmdInterface {
             return false;
         }
         return executeCommand("left",
-                                makeString(Integer.parseInt(left),0,0));
+                                makeString(value,0,0));
     }
 
     @Override

@@ -26,9 +26,9 @@ public class IPCamControlController {
 
         ICamFactory iCamFactory = new ICamFactory();
 
-        CmdInterface command = iCamFactory.getICam("Vivotek");
-                    command.setConnection("192.168.0.26",80,"root","pass");
-
+        CmdInterface command = iCamFactory.getICam("Hikvision");
+                    command.setConnection("192.168.0.39",80,"admin","12345");
+                command.stop();
             if(method.equalsIgnoreCase("left") && command.left(sp))
             {
                 System.out.print("success");
@@ -51,6 +51,9 @@ public class IPCamControlController {
             }
             else if (method.equalsIgnoreCase("zoomOut") && command.zoomOut(sp))
             {
+                System.out.print("success");
+            }
+            else if (method.equalsIgnoreCase("stop") && command.stop()){
                 System.out.print("success");
             }
 
