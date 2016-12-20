@@ -97,32 +97,35 @@ public class Hikvision implements CmdInterface {
     public boolean left(String left) {
         Integer value ;
         try{
+            stop();
             value = Integer.parseInt(left);
         }
         catch (NumberFormatException e){
             return false;
         }
         return executeCommand("left",
-                                makeString(value,0,0));
+                                makeString(-value,0,0));
     }
 
     @Override
     public boolean right(String right) {
         Integer value ;
         try{
+            stop();
             value = Integer.parseInt(right);
         }
         catch (NumberFormatException e){
             return false;
         }
 
-        return executeCommand("right",makeString(-value,0,0));
+        return executeCommand("right",makeString(value,0,0));
     }
 
     @Override
     public boolean up(String up) {
         Integer value ;
         try{
+            stop();
             value = Integer.parseInt(up);
         }
         catch (NumberFormatException e){
@@ -136,6 +139,7 @@ public class Hikvision implements CmdInterface {
     public boolean down(String down) {
         Integer value ;
         try {
+            stop();
             value  = Integer.parseInt(down);
         }
         catch (NumberFormatException e){
@@ -148,6 +152,7 @@ public class Hikvision implements CmdInterface {
     public boolean zoomIn(String zoomIn) {
         Integer value ;
         try {
+            stop();
             value  = Integer.parseInt(zoomIn);
         }
         catch (NumberFormatException e){
@@ -160,6 +165,7 @@ public class Hikvision implements CmdInterface {
     public boolean zoomOut(String zoomOut) {
         Integer value ;
         try {
+            stop();
             value  = Integer.parseInt(zoomOut);
         }
         catch (NumberFormatException e){
