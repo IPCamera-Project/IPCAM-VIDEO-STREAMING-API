@@ -15,17 +15,18 @@ import javax.sql.DataSource;
 @MapperScan("kh.com.kshrd.ipcam.repository")
 @EnableSwagger
 public class MybatisConfiguration {
-    @Autowired
-    private DataSource datasource;
 
+    @Autowired private DataSource datasource;
 
     @Bean
     public DataSource getDataSource(){
+
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
+
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://120.136.24.174:5432/IPCAM_MANAGEMENT_DB");
-        dataSource.setUsername("IPCAM_USER");
-        dataSource.setPassword("IPCAM_USER");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/demo");//120.136.24.174//IPCAM_MANAGEMENT_DB
+        dataSource.setUsername("postgres");//IPCAM_USER
+        dataSource.setPassword("rina");
         
         /*dataSource.setUrl("jdbc:postgresql://localhost/cctv");
         dataSource.setUsername("postgres");
