@@ -23,7 +23,7 @@ public interface UserRepository {
 		@Result(property="name", column="display_name"),		
 		@Result(property="username", column="username"),
 		@Result(property="password", column="password"),
-		@Result(property="image", column="image"),
+		@Result(property= "src/main/webapp/resources/image", column= "src/main/webapp/resources/image"),
 		@Result(property="status", column="status")
 	})
 	User getUserByID(@Param("user_id") int user_id);

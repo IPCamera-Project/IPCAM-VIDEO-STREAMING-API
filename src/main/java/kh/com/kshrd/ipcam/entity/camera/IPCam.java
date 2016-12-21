@@ -22,16 +22,13 @@ public class IPCam extends BaseEntity {
 	
 	@JsonProperty("PASSWORD")
 	private String password;
-	
-	@JsonProperty("STREAM_URL")
-	private String stream_url;
 
 	
-	@JsonProperty("MODEL")
+	@JsonProperty("model_id")
 	private Model model;
 	
-	@JsonProperty("USER")
-	private User user;
+	@JsonProperty("user_id")
+	private int user_id;
 	
 
 	public String getSerial_number() {
@@ -81,15 +78,7 @@ public class IPCam extends BaseEntity {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	public String getStream_url() {
-		return stream_url;
-	}
-	
-	public void setStream_url(String stream_url) {
-		this.stream_url = stream_url;
-	}
-	
+
 	public Model getModel() {
 		return model;
 	}
@@ -98,18 +87,13 @@ public class IPCam extends BaseEntity {
 		this.model = model;
 	}
 	
-	public User getUser() {
-		return user;
+	public int getUser() {
+		return user_id;
 	}
 	
 	public void setUser(User user) {
-		this.user = user;
+		this.user_id = user_id;
 	}
 	
-	@Override
-	public String toString() {
-		return "IPCam [serial_number=" + serial_number + ", ip_address=" + ip_address + ", web_port=" + web_port
-				+ ", rtsp_port=" + rtsp_port + ", username=" + username + ", password=" + password + ", stream_url="
-				+ stream_url + ", model=" + model + ", user=" + user + "]";
-	}
+
 }
