@@ -2,7 +2,6 @@ package kh.com.kshrd.ipcam.entity.user;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import kh.com.kshrd.ipcam.entity.camera.base.BaseEntity;
 
 public class Role {
     @JsonProperty("ROLE_ID")
@@ -17,6 +16,7 @@ public class Role {
     public int getRole_id() {
         return role_id;
     }
+
 
     public void setRole_id(int role_id) {
         this.role_id = role_id;
