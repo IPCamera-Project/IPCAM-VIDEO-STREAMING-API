@@ -1,14 +1,13 @@
-package kh.com.kshrd.ipcam.entity.camera.inputerEntity;
+package kh.com.kshrd.ipcam.entity.inputerEntity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import kh.com.kshrd.ipcam.entity.camera.Vender;
-import kh.com.kshrd.ipcam.entity.camera.base.BaseEntity;
 
 /**
  * Created by rina on 12/21/16.
  */
-public class ModelInputer  {
-
+public class ModelModifier {
+    @JsonProperty("MODEL_ID")
+    private int model_id;
     @JsonProperty("NAME")
     private String name;
     @JsonProperty("VENDOR_ID")
@@ -16,14 +15,15 @@ public class ModelInputer  {
     @JsonProperty("IMAGE")
     private String image;
 
-
-    public String getName() {
-        return name;
+    public int getModel_id() {
+        return model_id;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setModel_id(int model_id) {
+        this.model_id = model_id;
     }
 
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
 
     public String getImage() {
         return image;
@@ -32,13 +32,9 @@ public class ModelInputer  {
         this.image = image;
     }
 
-    public int getVender_id() {
-        return vender_id;
-    }
-
+    public int getVender_id() {return vender_id;}
     public void setVender_id(int vender_id) {
         this.vender_id = vender_id;
     }
-
 
 }

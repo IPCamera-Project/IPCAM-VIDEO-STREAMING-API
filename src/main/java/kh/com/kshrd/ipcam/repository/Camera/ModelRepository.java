@@ -1,8 +1,8 @@
 package kh.com.kshrd.ipcam.repository.Camera;
 
 import kh.com.kshrd.ipcam.entity.camera.Model;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.ModelInputer;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.ModelModifier;
+import kh.com.kshrd.ipcam.entity.inputerEntity.ModelInputer;
+import kh.com.kshrd.ipcam.entity.inputerEntity.ModelModifier;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 

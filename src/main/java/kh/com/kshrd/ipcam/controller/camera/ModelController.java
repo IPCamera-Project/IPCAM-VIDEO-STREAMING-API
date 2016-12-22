@@ -1,31 +1,23 @@
 package kh.com.kshrd.ipcam.controller.camera;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import kh.com.kshrd.ipcam.entity.camera.Model;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.ModelInputer;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.ModelModifier;
+import kh.com.kshrd.ipcam.entity.inputerEntity.ModelInputer;
+import kh.com.kshrd.ipcam.entity.inputerEntity.ModelModifier;
 import kh.com.kshrd.ipcam.respone.*;
 import kh.com.kshrd.ipcam.service.impl.ModelServiceImpl;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import sun.security.provider.certpath.OCSPResponse;
 
 import java.io.BufferedOutputStream;
-import java.io.File;
 import java.io.FileOutputStream;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
-import java.util.Objects;
 
 /**
  * Created by rina on 12/21/16.

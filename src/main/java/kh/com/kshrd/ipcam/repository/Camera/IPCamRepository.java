@@ -3,8 +3,8 @@ package kh.com.kshrd.ipcam.repository.Camera;
 import java.util.ArrayList;
 
 import kh.com.kshrd.ipcam.entity.camera.IPCam;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.IPCamInputer;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.IPCameraModifier;
+import kh.com.kshrd.ipcam.entity.inputerEntity.IPCamInputer;
+import kh.com.kshrd.ipcam.entity.inputerEntity.IPCameraModifier;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.One;

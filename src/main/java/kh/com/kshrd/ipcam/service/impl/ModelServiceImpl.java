@@ -1,8 +1,8 @@
 package kh.com.kshrd.ipcam.service.impl;
 
 import kh.com.kshrd.ipcam.entity.camera.Model;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.ModelInputer;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.ModelModifier;
+import kh.com.kshrd.ipcam.entity.inputerEntity.ModelInputer;
+import kh.com.kshrd.ipcam.entity.inputerEntity.ModelModifier;
 import kh.com.kshrd.ipcam.repository.Camera.ModelRepository;
 import kh.com.kshrd.ipcam.service.extend.ModelService;
 import org.springframework.beans.factory.annotation.Autowired;

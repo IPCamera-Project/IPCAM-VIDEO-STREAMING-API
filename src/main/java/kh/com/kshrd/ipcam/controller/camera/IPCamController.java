@@ -2,8 +2,8 @@ package kh.com.kshrd.ipcam.controller.camera;
 import java.util.ArrayList;
 
 import kh.com.kshrd.ipcam.entity.camera.IPCam;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.IPCamInputer;
-import kh.com.kshrd.ipcam.entity.camera.inputerEntity.IPCameraModifier;
+import kh.com.kshrd.ipcam.entity.inputerEntity.IPCamInputer;
+import kh.com.kshrd.ipcam.entity.inputerEntity.IPCameraModifier;
 import kh.com.kshrd.ipcam.respone.Response;
 import kh.com.kshrd.ipcam.respone.ResponseCode;
 import kh.com.kshrd.ipcam.respone.ResponseList;

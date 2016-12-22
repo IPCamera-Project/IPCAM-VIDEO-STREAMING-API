@@ -1,14 +1,11 @@
-package kh.com.kshrd.ipcam.entity.camera.inputerEntity;
+package kh.com.kshrd.ipcam.entity.inputerEntity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Created by rina on 12/21/16.
  */
-public class IPCameraModifier {
-
-    @JsonProperty("CAMERA_ID")
-    private  int camera_id;
+public class IPCamInputer {
 
     @JsonProperty("NAME")
     private String name;
@@ -104,15 +101,19 @@ public class IPCameraModifier {
         this.stream_url = stream_url;
     }
 
-    public int getModel_id() {return model_id;}
+    public int getModel_id() {
+        return model_id;
+    }
 
-    public void setModel_id(int model_id) {this.model_id = model_id;}
+    public void setModel_id(int model_id) {
+        this.model_id = model_id;
+    }
 
-    public int getUser_id() {return user_id;}
+    public int getUser_id() {
+        return user_id;
+    }
 
-    public void setUser_id(int user_id) {this.user_id = user_id;}
-
-    public int getCamera_id() {return camera_id;}
-
-    public void setCamera_id(int camera_id) {this.camera_id = camera_id;}
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
 }
